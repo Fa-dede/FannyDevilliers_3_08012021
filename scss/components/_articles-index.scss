@@ -37,6 +37,7 @@
             -webkit-background-clip: text;
             background-clip: none;
             -webkit-text-fill-color: transparent;
+            animation: pulse .4s ease-in;
         }
         i{
             position: relative;
@@ -51,10 +52,12 @@
                 -webkit-background-clip: text;
                 background-clip: none;
                 -webkit-text-fill-color: transparent;
+                
             }
         }
 
     }
+
+
+
 }
-
-
