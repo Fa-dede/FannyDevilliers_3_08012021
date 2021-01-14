@@ -1,0 +1,68 @@
+// @import "./utils/variables";
+
+.btn-explore{
+    background: linear-gradient($secondary-color, $primary-color);
+    height: 70px;
+    width: 300px;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 20px;
+    @include box-shadow;
+}
+
+.btn-steps{
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    @include box-shadow;
+    .round{
+        // display: none;
+        position: relative;
+        top: 5px;
+        left: -25px;
+        background-color: $primary-color;
+        height: 40px;
+        width: 40px;
+        border-radius: 30px;
+        p{
+            color: #fff;
+            font-size: 22px;
+            padding-top: 8px;
+            margin-left: -3px;
+        }
+    }
+    .btn-txt{
+        display: flex;
+        margin-top: 10px;
+        position: relative;
+        top: -50px;
+        i{
+            display: inline;
+            height: 30px;
+            margin-top: 12px;
+            margin-left: 50px;
+            margin-right: 40px;
+            font-size: 25px;
+            color: #7e7e7e;
+        }
+        h3{
+            display: block;
+            font-size: 22px;
+            position: relative;
+            top: -10px;
+            margin-right: 20px;
+            
+            
+        }
+    }
+}
+
+.btn-new{
+    display: block;
+    width: 500px;
+}

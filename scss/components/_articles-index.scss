@@ -1,0 +1,35 @@
+.restaurants{
+    // display: flex;
+    // flex-direction: column;
+    margin-bottom: 20px;
+    img{
+        display: inline;
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+        @include box-shadow;
+    }
+    
+    footer{
+        display: block;
+        border-radius: 0 0 20px 20px;
+        padding-left: 20px;
+        h2{
+            width: 200px;
+        }
+        p{
+            margin-top: -15px;
+            font-size: 22px;
+            width: 200px;
+        }
+        i{
+            position: relative;
+            top: -75px;
+            right: 20px;
+            float: right;
+            font-size: 30px;
+        }
+    }
+}
+
