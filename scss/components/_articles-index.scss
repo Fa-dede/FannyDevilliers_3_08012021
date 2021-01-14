@@ -1,7 +1,7 @@
 .restaurants{
     // display: flex;
     // flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     img{
         display: inline;
         object-fit: cover;
@@ -23,6 +23,20 @@
             margin-top: -15px;
             font-size: 22px;
             width: 200px;
+        }
+        input[type=checkbox] {
+            visibility:hidden;
+          }
+        label{
+            display: block;
+            cursor: pointer;
+        }
+        input:checked + label .far {
+            font-weight: bold;
+            background: -webkit-linear-gradient(#9356dc, #ff79da);
+            -webkit-background-clip: text;
+            background-clip: none;
+            -webkit-text-fill-color: transparent;
         }
         i{
             position: relative;
