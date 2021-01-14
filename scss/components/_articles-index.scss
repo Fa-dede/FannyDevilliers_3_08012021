@@ -35,6 +35,7 @@
                 font-weight: bold;
                 background: -webkit-linear-gradient(#9356dc, #ff79da);
                 -webkit-background-clip: text;
+                background-clip: none;
                 -webkit-text-fill-color: transparent;
             }
         }
