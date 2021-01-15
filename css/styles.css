@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+button {
+  cursor: pointer;
+}
+
 .btn-explore {
   background: linear-gradient(#ff79da, #9356dc);
   height: 70px;
@@ -26,6 +30,14 @@
   outline: transparent;
   box-shadow: 0px 10px 8px #d9d9d9;
 }
+.btn-steps:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+  transform: scale(1.05);
+  transition: 0.2s ease-in;
+}
+.btn-steps:hover i {
+  color: #9356dc;
+}
 .btn-steps .round {
   position: relative;
   top: 5px;
@@ -41,13 +53,14 @@
   padding-top: 8px;
   margin-left: -3px;
 }
-.btn-steps .btn-txt {
+
+.btn-txt {
   display: flex;
   margin-top: 10px;
   position: relative;
   top: -50px;
 }
-.btn-steps .btn-txt i {
+.btn-txt i {
   display: inline;
   height: 30px;
   margin-top: 15px;
@@ -56,7 +69,7 @@
   font-size: 22px;
   color: #7e7e7e;
 }
-.btn-steps .btn-txt h3 {
+.btn-txt h3 {
   display: block;
   font-size: 18px;
   position: relative;
@@ -154,6 +167,13 @@
   border-radius: 0 0 20px 20px;
   padding-left: 20px;
   box-shadow: 0px 10px 8px #d9d9d9;
+}
+.restaurants footer a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants footer a :visited {
+  text-decoration: none;
 }
 .restaurants footer h2 {
   width: 200px;
