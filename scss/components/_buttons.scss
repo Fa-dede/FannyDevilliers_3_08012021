@@ -4,13 +4,16 @@
     background: linear-gradient($secondary-color, $primary-color);
     height: 70px;
     width: 300px;
-    color: #fff;
     font-size: 22px;
     border: none;
     border-radius: 40px;
     margin-top: 20px;
     outline: transparent;
     @include box-shadow;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .btn-steps{
@@ -54,7 +57,7 @@
         }
         h3{
             display: block;
-            font-size: 20px;
+            font-size: 18px;
             position: relative;
             top: -5px;
             margin-right: 20px;
