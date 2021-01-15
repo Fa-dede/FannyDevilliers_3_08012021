@@ -1,10 +1,11 @@
 @import "./utils/variables";
-@import  "./bases/typography";
+@import  "./bases/mixins.scss";
 @import  "./components/buttons";
 @import "./components/input";
 @import "./components/articles-index";
 @import "./utils/keyframes";
 @import "./components/loader-spinner";
+@import "./pages/restaurants-menus";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 

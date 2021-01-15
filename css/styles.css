@@ -183,22 +183,6 @@ button {
   font-size: 22px;
   width: 200px;
 }
-.restaurants footer input[type=checkbox] {
-  visibility: hidden;
-  position: absolute;
-}
-.restaurants footer label {
-  display: block;
-  cursor: pointer;
-}
-.restaurants footer input:checked + label .far {
-  font-weight: bold;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: none;
-  -webkit-text-fill-color: transparent;
-  animation: pulse 0.4s ease-in;
-}
 .restaurants footer i {
   position: relative;
   top: -75px;
@@ -213,6 +197,25 @@ button {
   -webkit-background-clip: text;
   background-clip: none;
   -webkit-text-fill-color: transparent;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+  position: absolute;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input:checked + label .far {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 0.4s ease-in;
 }
 
 @keyframes pulse {
@@ -283,6 +286,23 @@ svg.tea #steamR {
     stroke-dashoffset: 27;
     opacity: 0;
   }
+}
+
+.restaurants-img {
+  width: 100%;
+}
+
+.menu-bloc {
+  height: 200px;
+  position: relative;
+  top: -90px;
+  background-color: #fff;
+  border-radius: 40px 40px 0 0;
+}
+.menu-bloc h1 {
+  font-family: "Shrikhand", cursive;
+  padding: 30px 0 30px 30px;
+  font-size: 35x;
 }
 
 body {
