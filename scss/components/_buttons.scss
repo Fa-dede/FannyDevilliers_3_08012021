@@ -140,3 +140,25 @@ button{
     -webkit-text-fill-color: transparent;
     animation: pulse .4s ease-in;
 }
+
+.btn-cmd{
+    background: linear-gradient($secondary-color, $primary-color);
+    height: 48px;
+    width: 170px;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 12px;
+    outline: transparent;
+    @include box-shadow;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.btn-explore:hover, .btn-cmd:hover{
+    filter: brightness(110%); 
+    transition: .5s ease;
+    @include box-shadow-darken;
+}

@@ -133,6 +133,28 @@ button {
   animation: pulse 0.4s ease-in;
 }
 
+.btn-cmd {
+  background: linear-gradient(#ff79da, #9356dc);
+  height: 48px;
+  width: 170px;
+  font-size: 15px;
+  border: none;
+  border-radius: 40px;
+  margin-top: 12px;
+  outline: transparent;
+  box-shadow: 0px 5px 15px #d9d9d9;
+}
+.btn-cmd a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-explore:hover, .btn-cmd:hover {
+  filter: brightness(110%);
+  transition: 0.5s ease;
+  box-shadow: 0px 5px 15px #7a7979;
+}
+
 .searching-area {
   background-color: #eaeaea;
   height: 50px;
@@ -315,8 +337,8 @@ svg.tea #steamR {
   }
 }
 
-.restaurants-img {
-  width: 100%;
+.restaurant-img {
+  height: 280px;
 }
 
 .fa-arrow-left {
@@ -339,17 +361,17 @@ svg.tea #steamR {
 }
 .menu-bloc__name {
   font-family: "Shrikhand", cursive;
-  padding: 30px 0 15px 30px;
+  padding: 30px 0 5px 30px;
   font-size: 26px;
 }
 .menu-bloc label, .menu-bloc i {
   position: relative;
   float: right;
   right: 20px;
-  top: -33px;
+  bottom: 28px;
   font-size: 25px;
 }
-.menu-bloc .btn-explore {
+.menu-bloc .btn-cmd {
   display: block;
   margin: auto;
   margin-top: 40px;
@@ -359,6 +381,8 @@ svg.tea #steamR {
   margin: 20px;
 }
 .menu__elements--titles {
+  display: block;
+  margin-top: 30px;
   margin-left: 10px;
   font-size: 16px;
   font-weight: 400;
@@ -377,7 +401,7 @@ svg.tea #steamR {
   max-height: 40px;
   background-color: #ffffff;
   padding: 15px;
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 20px;
   box-shadow: 0px 5px 15px #d9d9d9;
   cursor: pointer;
@@ -401,9 +425,14 @@ svg.tea #steamR {
   overflow: hidden;
 }
 .menu__elements--meals h1 {
-  display: inline;
+  display: block;
   margin: 0 0 5px 0;
   font-size: 17px;
+  margin-bottom: -15px;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__elements--meals p {
   display: inline;
@@ -426,10 +455,10 @@ svg.tea #steamR {
 .btn-selection {
   display: block;
   float: right;
-  height: 80px;
+  height: 85px;
   width: 70px;
   position: relative;
-  bottom: 90px;
+  bottom: 95px;
   left: 90px;
   border-radius: 0 20px 20px 0;
   background-color: #99e2d0;
@@ -459,6 +488,10 @@ body {
 }
 .logo__image {
   height: 30px;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
 }
 
 .explore {

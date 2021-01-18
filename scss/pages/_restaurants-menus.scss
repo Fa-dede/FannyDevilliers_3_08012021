@@ -1,8 +1,10 @@
 
 
-.restaurants-img{
-    width: 100%;
+.restaurant-img{
+    height: 280px;
 }
+
+
 .fa-arrow-left{
     display: block;
     float: left;
@@ -22,17 +24,17 @@
     margin-bottom: -100px;
     &__name{
         font-family: 'Shrikhand', cursive;
-        padding: 30px 0 15px 30px;
+        padding: 30px 0 5px 30px;
         font-size:26px;
     }
     label, i{
         position: relative;
         float: right;
         right: 20px;
-        top: -33px;
+        bottom: 28px;
         font-size: 25px;
     }
-    .btn-explore{
+    .btn-cmd{
         display: block;
         margin: auto;
         margin-top: 40px;
@@ -46,6 +48,8 @@
     //     translate: 50%;
     // }
     &--titles{
+        display: block;
+        margin-top: 30px;
         margin-left: 10px;
         font-size: 16px;
         font-weight: 400;
@@ -84,7 +88,7 @@
         max-height: 40px;
         background-color: #ffffff;
         padding: 15px;
-        margin-top: 10px;
+        margin-top: 15px;
         border-radius: 20px;
         @include box-shadow;
         cursor: pointer;
@@ -98,13 +102,19 @@
         }
     
         h1{
-            display: inline;
+            display: block;
             margin:0 0 5px 0;
             font-size: 17px;
+            margin-bottom: -15px;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            
         }
         p{
             display: inline;
-            // margin-top: 10px;
+            // margin-top: 0px;
             font-size: 14px;
 
         }
@@ -133,10 +143,10 @@
 .btn-selection{
     display: block;
     float: right;
-    height: 80px;
+    height: 85px;
     width: 70px;
     position: relative;
-    bottom: 90px;
+    bottom: 95px;
     left: 90px;
     // bottom: 40px;
     // left: 100px;
