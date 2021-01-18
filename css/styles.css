@@ -13,7 +13,7 @@ button {
   border-radius: 40px;
   margin-top: 12px;
   outline: transparent;
-  box-shadow: 0px 10px 8px #d9d9d9;
+  box-shadow: 0px 5px 15px #d9d9d9;
 }
 .btn-explore a {
   text-decoration: none;
@@ -28,7 +28,7 @@ button {
   height: 65px;
   border: none;
   outline: transparent;
-  box-shadow: 0px 10px 8px #d9d9d9;
+  box-shadow: 0px 5px 15px #d9d9d9;
 }
 .btn-steps:hover {
   background-color: rgba(147, 86, 220, 0.1);
@@ -115,6 +115,24 @@ button {
   animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
+.heart {
+  visibility: hidden;
+  position: absolute;
+}
+.heart label {
+  display: block;
+  cursor: pointer;
+}
+
+.heart:checked + label .far {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 0.4s ease-in;
+}
+
 .searching-area {
   background-color: #eaeaea;
   height: 50px;
@@ -167,7 +185,7 @@ button {
   padding-bottom: 2px;
   border-radius: 0 0 20px 20px;
   padding-left: 20px;
-  box-shadow: 0px 10px 8px #d9d9d9;
+  box-shadow: 0px 5px 15px #d9d9d9;
 }
 .restaurants footer a {
   text-decoration: none;
@@ -195,25 +213,6 @@ button {
   cursor: pointer;
 }
 
-input[type=checkbox] {
-  visibility: hidden;
-  position: absolute;
-}
-
-label {
-  display: block;
-  cursor: pointer;
-}
-
-input:checked + label .far {
-  font-weight: bold;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: none;
-  -webkit-text-fill-color: transparent;
-  animation: pulse 0.4s ease-in;
-}
-
 @keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -231,6 +230,38 @@ input:checked + label .far {
 @keyframes battement {
   to {
     box-shadow: 0 0 0 30px rgba(153, 226, 208, 0);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes padding {
+  0% {
+    padding: 0;
+  }
+  100% {
+    padding-right: 70px;
+  }
+}
+@keyframes resize {
+  0% {
+    width: auto;
+  }
+  100% {
+    width: 190px;
   }
 }
 svg.tea {
@@ -288,21 +319,129 @@ svg.tea #steamR {
   width: 100%;
 }
 
+.fa-arrow-left {
+  display: block;
+  float: left;
+  position: relative;
+  top: 5px;
+  left: -15px;
+  font-size: 20px;
+}
+
 .menu-bloc {
-  height: 200px;
+  height: auto;
   position: relative;
   top: -90px;
-  background-color: #fff;
+  background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  padding-bottom: 50px;
+  margin-bottom: -100px;
 }
-.menu-bloc h1 {
+.menu-bloc__name {
   font-family: "Shrikhand", cursive;
-  padding: 30px 0 30px 30px;
-  font-size: 35x;
+  padding: 30px 0 15px 30px;
+  font-size: 26px;
 }
 .menu-bloc label, .menu-bloc i {
   position: relative;
   float: right;
+  right: 20px;
+  top: -33px;
+  font-size: 25px;
+}
+.menu-bloc .btn-explore {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.menu__elements {
+  margin: 20px;
+}
+.menu__elements--titles {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.menu__elements--underlines {
+  margin-left: 10px;
+  display: block;
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+}
+.menu__elements--meals {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 40px;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px #d9d9d9;
+  cursor: pointer;
+}
+.menu__elements--meals:hover .selector-bloc {
+  animation: padding 1s;
+  animation-fill-mode: forwards;
+}
+.menu__elements--meals:hover .selector-bloc i {
+  animation: rotation 1.5s;
+}
+.menu__elements--meals:hover .text-bloc {
+  animation: resize 1s;
+  animation-fill-mode: forwards;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__elements--meals .text-bloc {
+  max-width: 220px;
+}
+.menu__elements--meals h1 {
+  display: inline;
+  margin: 0 0 5px 0;
+  font-size: 17px;
+}
+.menu__elements--meals p {
+  display: inline;
+  font-size: 14px;
+}
+.menu__elements--meals .selector-bloc {
+  display: inline-block;
+  float: right;
+  width: 20px;
+}
+.menu__elements--meals .price {
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  bottom: 20px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.btn-selection {
+  display: block;
+  float: right;
+  height: 80px;
+  width: 70px;
+  position: relative;
+  bottom: 90px;
+  left: 90px;
+  border-radius: 0 20px 20px 0;
+  background-color: #99e2d0;
+}
+.btn-selection .selectors {
+  visibility: hidden;
+}
+.btn-selection label {
+  position: relative;
+  top: 60px;
+  right: 7px;
+  color: #ffffff;
 }
 
 body {

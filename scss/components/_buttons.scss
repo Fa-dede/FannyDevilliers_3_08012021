@@ -121,3 +121,22 @@ button{
     animation: battement 2s infinite cubic-bezier(.66, 0, 0, 1);
 
 }
+
+// Bouton Like Heart beating
+
+.heart {
+    visibility:hidden;
+    position: absolute;
+    label{
+        display: block;
+        cursor: pointer;
+    }
+}
+.heart:checked + label .far {
+    font-weight: bold;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    animation: pulse .4s ease-in;
+}

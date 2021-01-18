@@ -26,3 +26,40 @@
      box-shadow: 0 0 0 30px rgba(153, 226, 208, 0);
    }
  }
+
+ @keyframes fadein {
+   from {
+       opacity:0;
+   }
+   to {
+       opacity:1;
+   }
+}
+
+@keyframes rotation{
+   0%{
+      transform: rotate(0);
+   }
+
+   100%{
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes padding{
+   0%{
+      padding:0;
+   }
+   100%{
+      padding-right: 70px;
+   }
+   
+}
+@keyframes resize{
+   0%{
+      width: auto;
+   }
+   100%{
+      width: 190px;
+   }
+}

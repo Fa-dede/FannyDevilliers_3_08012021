@@ -10,6 +10,7 @@
 <body>
     <header>
         <figure class="logo">
+            <i class="fas fa-arrow-left"></i>
             <a href="/FannyDevilliers_3_08012021/index.html"><img class="logo__image" src="/FannyDevilliers_3_08012021/docs/img/logo/ohmyfood.png" alt="logo-ohmyfood">
         </figure></a>
 
@@ -20,12 +21,125 @@
     </div>
 
     <main class="menu-bloc">
-        <h1>La Palette du goût</h1>
-        <input type="checkbox" value="None" id="heart" name="check"/>
+        <h1 class="menu-bloc__name">La palette du goût</h1>
+        <input class="heart" type="checkbox" value="None" id="heart" name="check"/>
         <label for="heart"><i class="far fa-heart"></i></label>
 
+        <section class="menu__elements menu__elements--1">
+            <h1 class="menu__elements--titles">ENTRÉES</h1>
+            <div class="menu__elements--underlines"> </div>
+            <article class="menu__elements--meals">
+                <div class="text-bloc">
+                    <h1>Foie gras de canard mi-cuit</h1>
+                    <br>
+                    <p>Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="selector-bloc">
+                    <p class="price">25€</p>
+                    <div class="btn-selection">
+                        <input class="selectors" type="checkbox" value="none" id="selector-1" name="check">
+                        <label for="selector-1">
+                            <i class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu__elements--meals">
+                <div class="text-bloc">
+                    <h1>Foie gras de canard mi-cuit</h1>
+                    <br>
+                    <p>Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="selector-bloc">
+                    <p class="price">35€</p>
+                    <div class="btn-selection">
+                        <input class="selectors" type="checkbox" value="none" id="selector-1" name="check">
+                        <label for="selector-1">
+                            <i class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="menu__elements--meals"> 
+                <h1>Oeuf au plat</h1>
+                <br>
+                <p>Assaisonné à la truffe sur lit de caviar</p>
+                <div class="selector-bloc">
+                    <p class="price">35€</p>
+                    <div class="btn-selection">
+                        <input class="selectors" type="checkbox" value="none" id="selector-1" name="check">
+                        <label for="selector-1">
+                            <i class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="menu__elements menu__elements--2">
+            <h1 class="menu__elements--titles">PLATS</h1>
+            <div class="menu__elements--underlines"> </div>
+            <article class="menu__elements--meals">
+                <h1>Filet de boeuf aux herbes</h1>
+                <p>Accompagné de sa ribambelle de légumes</p>
+                <p class="price">40€</p>
+            </article>
+            <article class="menu__elements--meals">
+                <h1>Parmentier de queue de boeuf</h1>
+                <p>À la truffe noire sur sa purée de panais</p>
+                <p class="price">35€</p>
+            </article>
+            <article class="menu__elements--meals"> 
+                <h1>Filet de turbot</h1>
+                <p>Aux agrumes</p>
+                <p class="price">44€</p>
+            </article>
+        </section>
+        <section class="menu__elements menu__elements--3">
+            <h1 class="menu__elements--titles">DESSERTS</h1>
+            <div class="menu__elements--underlines"> </div>
+            <article class="menu__elements--meals">
+                <h1>Paris-Brest</h1>
+                <p>Revisité</p>
+                <p class="price">18€</p>
+            </article>
+            <article class="menu__elements--meals">
+                <h1>Macaron au chocolat d'exception</h1>
+                <p>Et glace à la vanille de Madagascar</p>
+                <p class="price">22€</p>
+            </article>
+            <article class="menu__elements--meals"> 
+                <h1>Mousse au chocolat</h1>
+                <p>Au piment d'Espelette et à la truffe noire</p>
+                <p class="price">23€</p>
+            </article>
+        </section>
+
+        <button class="btn-explore"><a>Commander</a></button>
 
     </main>
+
+    <footer class="footer-page footer__menus">
+        <h1>ohmyfood</h1>
+        <a href="#">
+            <i class="fas fa-utensils"></i>
+            Proposez un restaurant
+        </a>
+        <br>
+        <a href="#">
+            <i class="fas fa-hands-helping"></i>
+            Devenir partenaire
+        </a>
+        <br>
+        <a href="#">Mention légales</a>
+        <br>
+        <a href="#">Contact</a>
+    
+    </footer>
 
 
 
