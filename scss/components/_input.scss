@@ -1,7 +1,7 @@
 
 .searching-area{
     background-color: #eaeaea;
-    height: 70px;
+    height: 50px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -16,14 +16,14 @@
     i{
         position: relative;
         left: 30px;
-        font-size: 25px;
-        margin-top: 20px;
+        font-size: 16px;
+        margin-top: 15px;
         height: 30px;
     }
     & input{
         border: none;
         background-color: transparent;
-        font-size: 25px;
+        font-size: 16px;
         font-weight: bold;
         color: rgb(53, 53, 53);
         text-align: center;
