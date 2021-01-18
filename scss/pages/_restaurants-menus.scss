@@ -71,10 +71,10 @@
             // background-color: violet;
             animation: resize 1s;
             animation-fill-mode: forwards;
-            word-wrap: break-word;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            // word-wrap: break-word;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+            // overflow: hidden;
         }
 
         // text-overflow: ellipsis;
@@ -91,6 +91,10 @@
 
         .text-bloc{
             max-width: 220px;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     
         h1{

@@ -392,13 +392,13 @@ svg.tea #steamR {
 .menu__elements--meals:hover .text-bloc {
   animation: resize 1s;
   animation-fill-mode: forwards;
+}
+.menu__elements--meals .text-bloc {
+  max-width: 220px;
   word-wrap: break-word;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-.menu__elements--meals .text-bloc {
-  max-width: 220px;
 }
 .menu__elements--meals h1 {
   display: inline;
