@@ -61,12 +61,17 @@ body{
     }
 }
 
-.restaurants-bloc{
-    padding:30px 30px 70px 30px;
+.reservation{
     background-color: $background-color;
+    padding:30px 30px 70px 30px;
+
     h1{
         font-size: 26px;
     }
+}
+
+.restaurants-bloc{
+    
 }
 
 .footer-page{
@@ -99,9 +104,9 @@ body{
 }
 
 // MEDIA QUERIES 
+@import "./layouts/desktop-version";
 
 
-// @media all and (min-width: 1024px){
 
 
 

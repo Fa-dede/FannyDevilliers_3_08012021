@@ -617,11 +617,11 @@ body {
   margin-left: 15px;
 }
 
-.restaurants-bloc {
-  padding: 30px 30px 70px 30px;
+.reservation {
   background-color: #f6f6f6;
+  padding: 30px 30px 70px 30px;
 }
-.restaurants-bloc h1 {
+.reservation h1 {
   font-size: 26px;
 }
 
@@ -651,6 +651,89 @@ body {
   color: #fff;
   width: 30px;
   font-size: 15px;
+}
+
+@media all and (min-width: 1024px) {
+  .logo {
+    text-align: left;
+  }
+
+  .searching-area {
+    justify-content: flex-end;
+  }
+
+  .bloc-1-desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .explore {
+    display: inline-block;
+    text-align: start;
+    margin-top: 60px;
+    border-radius: 0 50px 0 50px;
+    max-height: 200px;
+    min-width: 580px;
+    margin-right: 50px;
+    margin-left: 40px;
+  }
+  .explore .btn-explore {
+    display: block;
+    float: right;
+  }
+
+  .running-steps {
+    display: inline-block;
+    height: 230px;
+    margin-top: 10px;
+  }
+  .running-steps h1 {
+    display: block;
+    font-size: 18px;
+  }
+  .running-steps .steps-bloc {
+    display: block;
+    max-width: 500px;
+    margin-top: -40px;
+    margin-left: -60px;
+    transform: scale(0.8);
+  }
+
+  .reservation {
+    margin: 0 20px 20px 20px;
+    border-radius: 30px;
+  }
+  .reservation h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  .restaurants-bloc {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .restaurants {
+    width: 22%;
+  }
+  .restaurants__1::before, .restaurants__2::before {
+    position: relative;
+    top: 50px;
+    float: right;
+    right: 20px;
+  }
+  .restaurants__1, .restaurants__2 {
+    margin-top: -35px;
+  }
+  .restaurants:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+  }
+
+  .footer-page {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
