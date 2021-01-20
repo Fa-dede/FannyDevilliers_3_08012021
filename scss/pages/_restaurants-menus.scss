@@ -85,7 +85,7 @@
         // word-wrap: break-word;
         overflow-x: hidden;
         overflow-y: hidden;
-        max-height: 40px;
+        max-height: 70px;
         background-color: #ffffff;
         padding: 15px;
         margin-top: 15px;
@@ -94,6 +94,7 @@
         cursor: pointer;
 
         .text-bloc{
+            height: 50px;
             max-width: 220px;
             word-wrap: break-word;
             text-overflow: ellipsis;
@@ -126,11 +127,12 @@
         }
 
         .price{
-            display: inline-block;
+            display: block;
+            float: right;
             position: relative;
+            margin-right: 15px;
             left: 0px;
-            bottom: 20px;
-            // float: right;
+            bottom: 25px;
             margin-top: 0;
             font-weight: bold;
         }
@@ -146,7 +148,7 @@
     height: 85px;
     width: 70px;
     position: relative;
-    bottom: 95px;
+    bottom: 80px;
     left: 90px;
     // bottom: 40px;
     // left: 100px;
@@ -157,7 +159,7 @@
     }
     label{
         position: relative;
-        top: 55px;
+        top: 65px;
         right: 7px;
         color: #ffffff;
     }
