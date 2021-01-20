@@ -69,11 +69,6 @@ body * {
     transform: scale(0) translate3d(0, 0, 0);
   }
 }
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .loader-spinner .loader__bloc i {
   font-size: 30px;
   position: absolute;
