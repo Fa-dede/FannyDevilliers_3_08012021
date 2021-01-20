@@ -48,12 +48,14 @@
 // RESTAURANTS
 
 .reservation{
-    margin: 0 20px 20px 20px;
-    border-radius: 30px;
+    margin: 0 0px 20px 0px;
+    padding: 0 0 40px 0;
+    border-radius: 150px 150px 0 0;
     h1{
         text-align: center;
         margin-bottom: 30px;
         margin-top: 0px;
+        padding-top: 30px;
     }
 }
 .restaurants-bloc{
@@ -61,8 +63,18 @@
     justify-content: space-around;
 }
 
+.chevrons{
+    display: block;
+    font-size: 50px;
+    margin-top: 100px;
+    color: #d9d9d9;
+    &:hover{
+        color: $tertiary-color;
+    }
+}
+
 .restaurants{
-    width: 22%;
+    width: 20%;
     &__1::before, &__2::before{
         position: relative;
         top: 50px;

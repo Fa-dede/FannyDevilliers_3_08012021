@@ -153,6 +153,10 @@ button {
   color: #353535;
 }
 
+#chevron-left {
+  display: none;
+}
+
 .restaurants {
   display: block;
   margin-top: 15px;
@@ -578,6 +582,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.fa-chevron-left i {
+  display: none;
+}
+
 .logo {
   text-align: center;
   margin-bottom: 10px;
@@ -700,13 +708,15 @@ body {
   }
 
   .reservation {
-    margin: 0 20px 20px 20px;
-    border-radius: 30px;
+    margin: 0 0px 20px 0px;
+    padding: 0 0 40px 0;
+    border-radius: 150px 150px 0 0;
   }
   .reservation h1 {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0px;
+    padding-top: 30px;
   }
 
   .restaurants-bloc {
@@ -714,8 +724,18 @@ body {
     justify-content: space-around;
   }
 
+  .chevrons {
+    display: block;
+    font-size: 50px;
+    margin-top: 100px;
+    color: #d9d9d9;
+  }
+  .chevrons:hover {
+    color: #99e2d0;
+  }
+
   .restaurants {
-    width: 22%;
+    width: 20%;
   }
   .restaurants__1::before, .restaurants__2::before {
     position: relative;
