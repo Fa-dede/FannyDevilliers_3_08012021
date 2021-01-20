@@ -265,13 +265,13 @@ button {
 }
 @keyframes sentBack {
   0% {
-    position: absolute;
+    position: fixed;
   }
   50% {
-    position: absolute;
+    position: fixed;
   }
   90% {
-    position: absolute;
+    position: fixed;
   }
   100% {
     position: relative;
@@ -301,7 +301,7 @@ body * {
 }
 
 .loader__bloc {
-  position: absolute;
+  position: fixed;
   top: 60px;
   left: 0;
   width: 100%;
