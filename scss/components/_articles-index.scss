@@ -4,6 +4,25 @@
     display: block;
     margin-top: 15px;
     height: 253px;
+    &__1::before, &__2::before{
+        content: "Nouveau";
+        display: block;
+        float: right;
+        position: absolute;
+        margin-top: 20px;
+        right: 50px;
+        background-color: $tertiary-color;
+        color: $tertiary-darken;
+        width: 80px;
+        height: 25px;
+        border-radius: 3px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 7px;
+        box-shadow: 0 0 0 0 rgba(153, 226, 208, .7);
+        animation: battement 2s infinite cubic-bezier(.66, 0, 0, 1);
+    }
     img{
         display: inline;
         object-fit: cover;
