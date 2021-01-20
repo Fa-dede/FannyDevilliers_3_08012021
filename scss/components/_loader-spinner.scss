@@ -4,11 +4,14 @@ body * {
   box-sizing: border-box;
 }
 .loader-spinner{
-  animation: fadeout ease 6s;
+  animation: fadeout ease 5s;
   animation-fill-mode: forwards;
+  position: fixed;
+  // animation: sentBack ease-in-out 6s;
 }
 
 .loader__bloc {
+  display: block;
   position: fixed;
   top: 60px;
   left: 0;
@@ -54,20 +57,6 @@ body * {
 }
 .loader-spinner .loader__bloc div div {
   animation-play-state: running;
-}
-@keyframes loadicons {
-  0% {
-    transform: scale(0) translate3d(0, 0, 0);
-  }
-  8% {
-    transform: scale(1.2) translate3d(0, 0, 0);
-  }
-  14% {
-    transform: scale(1) translate3d(0, 0, 0);
-  }
-  20% {
-    transform: scale(0) translate3d(0, 0, 0);
-  }
 }
 .loader-spinner .loader__bloc i {
   font-size: 30px;

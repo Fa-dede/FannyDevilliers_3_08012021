@@ -68,6 +68,7 @@
    }
    90%{
      position: fixed;
+     height: 100%;
    }
    100%{
      position: relative;
@@ -111,6 +112,15 @@
    20% {
      transform: scale(0) translate3d(0, 0, 0);
    }
+ }
+
+ @keyframes vanish{
+    0%{
+       display: block;
+    }
+    100%{
+       display: none;
+    }
  }
 
  //ANIMATION CHARGEMENT MENUS

@@ -272,6 +272,7 @@ button {
   }
   90% {
     position: fixed;
+    height: 100%;
   }
   100% {
     position: relative;
@@ -310,6 +311,14 @@ button {
     transform: scale(0) translate3d(0, 0, 0);
   }
 }
+@keyframes vanish {
+  0% {
+    display: block;
+  }
+  100% {
+    display: none;
+  }
+}
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -323,11 +332,13 @@ body * {
 }
 
 .loader-spinner {
-  animation: fadeout ease 6s;
+  animation: fadeout ease 5s;
   animation-fill-mode: forwards;
+  position: fixed;
 }
 
 .loader__bloc {
+  display: block;
   position: fixed;
   top: 60px;
   left: 0;
@@ -375,20 +386,6 @@ body * {
   animation-play-state: running;
 }
 
-@keyframes loadicons {
-  0% {
-    transform: scale(0) translate3d(0, 0, 0);
-  }
-  8% {
-    transform: scale(1.2) translate3d(0, 0, 0);
-  }
-  14% {
-    transform: scale(1) translate3d(0, 0, 0);
-  }
-  20% {
-    transform: scale(0) translate3d(0, 0, 0);
-  }
-}
 .loader-spinner .loader__bloc i {
   font-size: 30px;
   position: absolute;
