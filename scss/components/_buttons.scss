@@ -85,11 +85,10 @@ button{
     background-color: $tertiary-color;
     border-color: $tertiary-color;
     color: $tertiary-darken;
-    display: inline;
+    display: block;
     position: relative;
     float: right;
     top: 50px;
-    right: 20px;
     height: 35px;
     width: 100px;
     border-radius: 3px;
@@ -125,10 +124,11 @@ button{
 // Bouton Like Heart beating
 
 .heart {
-    visibility:hidden;
-    position: absolute;
+    display: none;
+    // visibility:hidden;
+    position: relative;
     label{
-        display: block;
+        position:absolute;
         cursor: pointer;
     }
 }

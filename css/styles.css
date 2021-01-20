@@ -82,11 +82,10 @@ button {
   background-color: #99e2d0;
   border-color: #99e2d0;
   color: #008766;
-  display: inline;
+  display: block;
   position: relative;
   float: right;
   top: 50px;
-  right: 20px;
   height: 35px;
   width: 100px;
   border-radius: 3px;
@@ -116,11 +115,11 @@ button {
 }
 
 .heart {
-  visibility: hidden;
-  position: absolute;
+  display: none;
+  position: relative;
 }
 .heart label {
-  display: block;
+  position: absolute;
   cursor: pointer;
 }
 
@@ -192,6 +191,8 @@ button {
 
 .restaurants {
   display: block;
+  margin-top: 15px;
+  height: 253px;
 }
 .restaurants img {
   display: inline;
@@ -200,37 +201,38 @@ button {
   height: 175px;
   border-radius: 20px 20px 0 0;
 }
-.restaurants footer {
+.restaurants .article-footer {
   display: block;
-  margin-top: -20px;
+  position: relative;
+  bottom: 20px;
   background-color: white;
-  padding-bottom: 2px;
   border-radius: 0 0 20px 20px;
-  padding-left: 20px;
+  padding-left: 15px;
   box-shadow: 0px 5px 15px #d9d9d9;
 }
-.restaurants footer a {
+.restaurants .article-footer a {
   text-decoration: none;
   color: black;
 }
-.restaurants footer a :visited {
+.restaurants .article-footer a :visited {
   text-decoration: none;
 }
-.restaurants footer h2 {
-  width: 200px;
+.restaurants .article-footer h2 {
   font-size: 18px;
   padding-top: 15px;
+  margin-bottom: 0;
 }
-.restaurants footer p {
-  margin-top: -10px;
+.restaurants .article-footer p {
+  display: inline-block;
+  margin-top: 5px;
   font-size: 16px;
-  width: 200px;
 }
-.restaurants footer i {
-  position: relative;
-  top: -55px;
-  right: 30px;
+.restaurants .article-footer i {
+  display: block;
   float: right;
+  position: relative;
+  bottom: 15px;
+  right: 20px;
   font-size: 28px;
   cursor: pointer;
 }
@@ -474,11 +476,8 @@ svg.tea #steamR {
 }
 
 body {
-  overflow-x: hidden;
-}
-
-body {
   margin: 0;
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
 
@@ -496,14 +495,15 @@ body {
 
 .explore {
   background-color: #f6f6f6;
-  padding: 35px 30px 60px 30px;
+  padding: 8px 30px 50px 30px;
   text-align: center;
 }
 .explore h1 {
-  font-size: 24px;
-  margin: 0 30px 0 30px;
+  margin-top: 30px;
+  font-size: 26px;
 }
 .explore h2 {
+  margin-top: -10px;
   font-weight: 300;
   font-size: 18px;
   color: #353535;
@@ -526,7 +526,6 @@ body {
 }
 .restaurants-bloc h1 {
   font-size: 26px;
-  margin-bottom: -12px;
 }
 
 .footer-page {

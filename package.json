@@ -4,7 +4,8 @@
   "description": "Projet 3 : Ohmyfood OCR",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:./css/styles.css"
+    "sass": "sass --watch ./scss/main.scss:./css/styles.css",
+    "sass-2": "sass --watch ./scss/desktop.scss:./css/desktop.css"
   },
   "repository": {
     "type": "git",
