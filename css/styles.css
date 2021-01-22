@@ -718,7 +718,7 @@ body {
 
   .reservation {
     margin: 0 0px 20px 0px;
-    padding: 0 0 40px 0;
+    padding: 0 0 60px 0;
     border-radius: 150px 150px 0 0;
   }
   .reservation h1 {
@@ -731,6 +731,9 @@ body {
   .restaurants-bloc {
     display: flex;
     justify-content: space-around;
+  }
+  .restaurants-bloc .restaurants {
+    min-width: 220px;
   }
 
   #chevron-right, #chevron-left {
@@ -799,6 +802,36 @@ body {
 
   #footer-menus {
     margin-top: -80px;
+  }
+}
+@media all and (min-width: 700px) and (max-width: 1023px) {
+  .running-steps h1 {
+    text-align: center;
+  }
+
+  .reservation h1 {
+    text-align: center;
+  }
+
+  .restaurants-bloc {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    width: 100%;
+  }
+  .restaurants-bloc .restaurants {
+    width: 45%;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  .restaurants-bloc .restaurants__1, .restaurants-bloc .restaurants__2 {
+    margin-bottom: 60px;
+  }
+  .restaurants-bloc .restaurants__1::before, .restaurants-bloc .restaurants__2::before {
+    position: relative;
+    top: 50px;
+    float: right;
+    right: 20px;
   }
 }
 

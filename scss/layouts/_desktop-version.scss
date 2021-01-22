@@ -49,7 +49,7 @@
 
 .reservation{
     margin: 0 0px 20px 0px;
-    padding: 0 0 40px 0;
+    padding: 0 0 60px 0;
     border-radius: 150px 150px 0 0;
     h1{
         text-align: center;
@@ -61,6 +61,9 @@
 .restaurants-bloc{
     display: flex;
     justify-content: space-around;
+    .restaurants{
+        min-width: 220px;
+    }
 }
 
 #chevron-right, #chevron-left{
