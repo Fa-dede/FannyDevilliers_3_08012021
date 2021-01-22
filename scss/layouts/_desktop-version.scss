@@ -63,7 +63,7 @@
     justify-content: space-around;
 }
 
-.chevrons{
+#chevron-right, #chevron-left{
     display: block;
     font-size: 50px;
     margin-top: 100px;
@@ -92,6 +92,7 @@
 
 .footer-page{
     text-align: center;
+    margin-top: -30px;
 }
 
 

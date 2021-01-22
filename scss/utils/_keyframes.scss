@@ -38,12 +38,9 @@
       transform: rotate(360deg);
    }
 }
-@keyframes padding{
-   0%{
-      padding:0;
-   }
+@keyframes translate{
    100%{
-      padding-right: 70px;
+      transform: translateX(-70px);
    }
    
 }
@@ -53,7 +50,7 @@
       width: auto;
    }
    100%{
-      width: 190px;
+      width: 50%;
    }
 }
 

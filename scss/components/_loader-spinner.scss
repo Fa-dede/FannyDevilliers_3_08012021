@@ -24,7 +24,20 @@ body * {
   background: $primary-color;
   animation: sentBack ease-in-out 6s;
   animation-fill-mode: forwards;
-  
+  h1{
+    color: #fff;
+    filter: brightness(70%);
+    text-align: center;
+    margin-top: 150px;
+  }
+  p{
+    color: #fff;
+    filter: brightness(80%);
+    text-align: center;
+    margin-top: 250px;
+    font-size: 15px;
+    // font-style: italic;
+  }
 }
 .loader-spinner .loader__bloc {
   // z-index: 9999;

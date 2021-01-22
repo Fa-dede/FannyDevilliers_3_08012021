@@ -1,0 +1,43 @@
+@media all and (min-width: 1024px){
+
+.restaurant-img {
+        img{
+            opacity: .8;
+            height: 200px;
+            object-fit: cover;
+        }
+}
+
+.menu-bloc{
+    margin: 30px 30px 0px 30px;
+    border-radius: 0 60px 0 60px;
+    &__name{
+        text-align: center;
+    }
+    .bloc-meals{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.text-bloc{
+    width: 75%;
+}
+
+.btn-selection{
+    position: relative;
+    // bottom: 100px;
+}
+
+.menu__elements{
+    display: inline-block;
+    width: 25%;
+}
+
+#footer-menus{
+    margin-top: -80px;
+}
+
+
+
+}

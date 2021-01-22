@@ -43,22 +43,22 @@
 
 .menu__elements{
     margin: 20px;
-    
-    // &--1{
-    //     animation: fadein .2s ease-in;
-    // }
+    &--1{
+        opacity: 0;
+        animation: fadein 1s .5s ease-in;
+        animation-fill-mode: forwards;
+    }
 
-    :nth-of-type(1){
-        animation: fadein 1s ease-in;
+    &--2{
+        opacity: 0;
+        animation: fadein 1s 1s ease-in;
+        animation-fill-mode: forwards;
     }
-    :nth-of-type(2){
-        animation: fadein 1.3s ease-in;
-    }
-    :nth-of-type(3){
-        animation: fadein 1.8s ease-in;
-    }
-    :nth-of-type(4){
-        animation: fadein 2s ease-in;
+
+    &--3{
+        opacity: 0;
+        animation: fadein 1s 1.5s ease-in;
+        animation-fill-mode: forwards;
     }
 
 
@@ -81,7 +81,7 @@
     &--meals{
 
         &:hover .selector-bloc{
-            animation: padding 1s;
+            animation: translate 1s;
             animation-fill-mode: forwards;
             & i{
                animation: rotation 1.5s;
@@ -89,7 +89,7 @@
         }
         &:hover .text-bloc{
             // background-color: violet;
-            animation: resize 1s;
+            animation: resize 0s;
             animation-fill-mode: forwards;
             // word-wrap: break-word;
             // text-overflow: ellipsis;
@@ -110,8 +110,10 @@
         cursor: pointer;
 
         .text-bloc{
+            display: block;
             height: 50px;
-            max-width: 220px;
+            // width: 70%;
+            // max-width: 220px;
             word-wrap: break-word;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -160,7 +162,7 @@
     height: 85px;
     width: 70px;
     position: relative;
-    bottom: 80px;
+    bottom: 100px;
     left: 90px;
     // bottom: 40px;
     // left: 100px;
@@ -171,7 +173,7 @@
     }
     label{
         position: relative;
-        top: 65px;
+        top: 55px;
         right: 7px;
         color: #ffffff;
     }

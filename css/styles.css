@@ -153,7 +153,7 @@ button {
   color: #353535;
 }
 
-#chevron-left {
+#chevron-right, #chevron-left {
   display: none;
 }
 
@@ -251,12 +251,9 @@ button {
     transform: rotate(360deg);
   }
 }
-@keyframes padding {
-  0% {
-    padding: 0;
-  }
+@keyframes translate {
   100% {
-    padding-right: 70px;
+    transform: translateX(-70px);
   }
 }
 @keyframes resize {
@@ -264,7 +261,7 @@ button {
     width: auto;
   }
   100% {
-    width: 190px;
+    width: 50%;
   }
 }
 @keyframes sentBack {
@@ -354,6 +351,19 @@ body * {
   background: #9356dc;
   animation: sentBack ease-in-out 6s;
   animation-fill-mode: forwards;
+}
+.loader__bloc h1 {
+  color: #fff;
+  filter: brightness(70%);
+  text-align: center;
+  margin-top: 150px;
+}
+.loader__bloc p {
+  color: #fff;
+  filter: brightness(80%);
+  text-align: center;
+  margin-top: 250px;
+  font-size: 15px;
 }
 
 .loader-spinner .loader__bloc {
@@ -468,17 +478,20 @@ body * {
 .menu__elements {
   margin: 20px;
 }
-.menu__elements :nth-of-type(1) {
-  animation: fadein 1s ease-in;
+.menu__elements--1 {
+  opacity: 0;
+  animation: fadein 1s 0.5s ease-in;
+  animation-fill-mode: forwards;
 }
-.menu__elements :nth-of-type(2) {
-  animation: fadein 1.3s ease-in;
+.menu__elements--2 {
+  opacity: 0;
+  animation: fadein 1s 1s ease-in;
+  animation-fill-mode: forwards;
 }
-.menu__elements :nth-of-type(3) {
-  animation: fadein 1.8s ease-in;
-}
-.menu__elements :nth-of-type(4) {
-  animation: fadein 2s ease-in;
+.menu__elements--3 {
+  opacity: 0;
+  animation: fadein 1s 1.5s ease-in;
+  animation-fill-mode: forwards;
 }
 .menu__elements--titles {
   display: block;
@@ -507,19 +520,19 @@ body * {
   cursor: pointer;
 }
 .menu__elements--meals:hover .selector-bloc {
-  animation: padding 1s;
+  animation: translate 1s;
   animation-fill-mode: forwards;
 }
 .menu__elements--meals:hover .selector-bloc i {
   animation: rotation 1.5s;
 }
 .menu__elements--meals:hover .text-bloc {
-  animation: resize 1s;
+  animation: resize 0s;
   animation-fill-mode: forwards;
 }
 .menu__elements--meals .text-bloc {
+  display: block;
   height: 50px;
-  max-width: 220px;
   word-wrap: break-word;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -561,7 +574,7 @@ body * {
   height: 85px;
   width: 70px;
   position: relative;
-  bottom: 80px;
+  bottom: 100px;
   left: 90px;
   border-radius: 0 20px 20px 0;
   background-color: #99e2d0;
@@ -571,7 +584,7 @@ body * {
 }
 .btn-selection label {
   position: relative;
-  top: 65px;
+  top: 55px;
   right: 7px;
   color: #ffffff;
 }
@@ -580,10 +593,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-}
-
-.fa-chevron-left i {
-  display: none;
 }
 
 .logo {
@@ -724,13 +733,13 @@ body {
     justify-content: space-around;
   }
 
-  .chevrons {
+  #chevron-right, #chevron-left {
     display: block;
     font-size: 50px;
     margin-top: 100px;
     color: #d9d9d9;
   }
-  .chevrons:hover {
+  #chevron-right:hover, #chevron-left:hover {
     color: #99e2d0;
   }
 
@@ -753,6 +762,43 @@ body {
 
   .footer-page {
     text-align: center;
+    margin-top: -30px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .restaurant-img img {
+    opacity: 0.8;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .menu-bloc {
+    margin: 30px 30px 0px 30px;
+    border-radius: 0 60px 0 60px;
+  }
+  .menu-bloc__name {
+    text-align: center;
+  }
+  .menu-bloc .bloc-meals {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-bloc {
+    width: 75%;
+  }
+
+  .btn-selection {
+    position: relative;
+  }
+
+  .menu__elements {
+    display: inline-block;
+    width: 25%;
+  }
+
+  #footer-menus {
+    margin-top: -80px;
   }
 }
 
