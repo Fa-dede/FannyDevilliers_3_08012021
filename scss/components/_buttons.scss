@@ -3,7 +3,8 @@ button{
     cursor: pointer;
 }
 .btn-explore{
-    background: linear-gradient($secondary-color, $primary-color);
+    background: rgb(255,121,218);
+    background: linear-gradient(170deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     height: 48px;
     width: 210px;
     font-size: 15px;
@@ -89,23 +90,36 @@ button{
         cursor: pointer;
     }
 }
+.fa-heart{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    padding-top: 10px;
+
+}
+
 .heart:checked + label .far {
     font-weight: bold;
     background: -webkit-linear-gradient(#9356dc, #ff79da);
     -webkit-background-clip: text;
-    background-clip: none;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: pulse .4s ease-in;
+    animation: pulse .5s ease-in;
 }
 
 .btn-cmd{
-    background: linear-gradient($secondary-color, $primary-color);
+    float: none ;
+    background: rgb(255,121,218);
+    background: linear-gradient(170deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     height: 48px;
     width: 170px;
     font-size: 15px;
     border: none;
     border-radius: 40px;
-    margin-top: 12px;
+    position: relative;
+    bottom: 0px;
+    // margin-top: 12px;
     outline: transparent;
     @include box-shadow;
     a{

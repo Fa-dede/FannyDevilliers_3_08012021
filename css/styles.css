@@ -6,7 +6,8 @@ button {
 }
 
 .btn-explore {
-  background: linear-gradient(#ff79da, #9356dc);
+  background: #ff79da;
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
   height: 48px;
   width: 210px;
   font-size: 15px;
@@ -87,23 +88,34 @@ button {
   cursor: pointer;
 }
 
+.fa-heart {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
 .heart:checked + label .far {
   font-weight: bold;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
-  background-clip: none;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: pulse 0.4s ease-in;
+  animation: pulse 0.5s ease-in;
 }
 
 .btn-cmd {
-  background: linear-gradient(#ff79da, #9356dc);
+  float: none;
+  background: #ff79da;
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
   height: 48px;
   width: 170px;
   font-size: 15px;
   border: none;
   border-radius: 40px;
-  margin-top: 12px;
+  position: relative;
+  bottom: 0px;
   outline: transparent;
   box-shadow: 0px 5px 15px #d9d9d9;
 }
@@ -219,7 +231,7 @@ button {
   float: right;
   position: relative;
   bottom: 15px;
-  right: 20px;
+  right: 10px;
   font-size: 28px;
   cursor: pointer;
 }
@@ -323,6 +335,7 @@ button {
 @keyframes fadein {
   0% {
     opacity: 0;
+    margin-top: 30px;
   }
   100% {
     opacity: 1;
@@ -333,15 +346,16 @@ body * {
 }
 
 .loader-spinner {
-  animation: fadeout ease 5s;
+  animation: fadeout ease 2.5s;
   animation-fill-mode: forwards;
   position: fixed;
+  overflow: hidden;
 }
 
 .loader__bloc {
   display: block;
   position: fixed;
-  top: 60px;
+  top: 0;
   left: 0;
   width: 100%;
   transition: all 0.1s linear;
@@ -349,21 +363,15 @@ body * {
   height: 100%;
   transform: scale(10);
   background: #9356dc;
-  animation: sentBack ease-in-out 6s;
+  animation: sentBack ease-in-out 2.5s;
   animation-fill-mode: forwards;
 }
-.loader__bloc h1 {
+.loader__bloc h2 {
   color: #fff;
-  filter: brightness(70%);
+  filter: brightness(100%);
   text-align: center;
   margin-top: 150px;
-}
-.loader__bloc p {
-  color: #fff;
-  filter: brightness(80%);
-  text-align: center;
-  margin-top: 250px;
-  font-size: 15px;
+  font-weight: 100;
 }
 
 .loader-spinner .loader__bloc {
@@ -475,22 +483,32 @@ body * {
   margin-top: 40px;
 }
 
+.bloc-meals {
+  min-height: 370px;
+}
+
 .menu__elements {
-  margin: 20px;
+  min-height: 250px;
+  margin: 20px 20px 0 20px;
 }
-.menu__elements--1 {
+.menu__elements .meal-1 {
   opacity: 0;
-  animation: fadein 1s 0.5s ease-in;
+  animation: fadein 2s ease;
   animation-fill-mode: forwards;
 }
-.menu__elements--2 {
+.menu__elements .meal-2 {
   opacity: 0;
-  animation: fadein 1s 1s ease-in;
+  animation: fadein 2s 0.3s ease;
   animation-fill-mode: forwards;
 }
-.menu__elements--3 {
+.menu__elements .meal-3 {
   opacity: 0;
-  animation: fadein 1s 1.5s ease-in;
+  animation: fadein 2s 0.6s;
+  animation-fill-mode: forwards;
+}
+.menu__elements .meal-4 {
+  opacity: 0;
+  animation: fadein 2s 0.9s;
   animation-fill-mode: forwards;
 }
 .menu__elements--titles {
@@ -498,7 +516,7 @@ body * {
   margin-top: 30px;
   margin-left: 10px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 5px;
 }
 .menu__elements--underlines {
@@ -524,7 +542,7 @@ body * {
   animation-fill-mode: forwards;
 }
 .menu__elements--meals:hover .selector-bloc i {
-  animation: rotation 1.5s;
+  animation: rotation 0.7s 0.1s ease-in-out;
 }
 .menu__elements--meals:hover .text-bloc {
   animation: resize 0s;
@@ -551,6 +569,7 @@ body * {
 .menu__elements--meals p {
   display: inline;
   font-size: 14px;
+  font-weight: 100;
 }
 .menu__elements--meals .selector-bloc {
   display: block;
@@ -640,6 +659,9 @@ body {
 }
 .reservation h1 {
   font-size: 26px;
+}
+.reservation p {
+  font-weight: 100;
 }
 
 .footer-page {
@@ -786,6 +808,9 @@ body {
     display: flex;
     justify-content: center;
   }
+  .menu-bloc .bloc-meals__3 {
+    min-height: 455px;
+  }
 
   .text-bloc {
     width: 75%;
@@ -832,6 +857,10 @@ body {
     top: 50px;
     float: right;
     right: 20px;
+  }
+
+  .loader__bloc p {
+    margin-top: 360px;
   }
 }
 

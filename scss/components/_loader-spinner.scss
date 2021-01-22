@@ -4,16 +4,17 @@ body * {
   box-sizing: border-box;
 }
 .loader-spinner{
-  animation: fadeout ease 5s;
+  animation: fadeout ease 2.5s;
   animation-fill-mode: forwards;
   position: fixed;
+  overflow: hidden;
   // animation: sentBack ease-in-out 6s;
 }
 
 .loader__bloc {
   display: block;
   position: fixed;
-  top: 60px;
+  top: 0;
   left: 0;
   width: 100%;
   transition: all 0.1s linear;
@@ -22,21 +23,15 @@ body * {
   transform: scale(10);
   // z-index: -1;
   background: $primary-color;
-  animation: sentBack ease-in-out 6s;
+  animation: sentBack ease-in-out 2.5s;
   animation-fill-mode: forwards;
-  h1{
+
+  h2{
     color: #fff;
-    filter: brightness(70%);
+    filter: brightness(100%);
     text-align: center;
     margin-top: 150px;
-  }
-  p{
-    color: #fff;
-    filter: brightness(80%);
-    text-align: center;
-    margin-top: 250px;
-    font-size: 15px;
-    // font-style: italic;
+    font-weight: 100;
   }
 }
 .loader-spinner .loader__bloc {

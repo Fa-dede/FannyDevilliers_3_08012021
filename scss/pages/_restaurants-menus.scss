@@ -41,26 +41,33 @@
     }
 }
 
+.bloc-meals{
+    min-height: 370px;
+}
+
 .menu__elements{
-    margin: 20px;
-    &--1{
+    min-height: 250px;
+    margin: 20px 20px 0 20px;
+    .meal-1{
         opacity: 0;
-        animation: fadein 1s .5s ease-in;
+        animation: fadein 2s ease;
         animation-fill-mode: forwards;
     }
-
-    &--2{
+    .meal-2{
         opacity: 0;
-        animation: fadein 1s 1s ease-in;
+        animation:  fadein 2s .3s ease;
         animation-fill-mode: forwards;
     }
-
-    &--3{
+    .meal-3{
         opacity: 0;
-        animation: fadein 1s 1.5s ease-in;
+        animation:  fadein 2s .6s;
         animation-fill-mode: forwards;
     }
-
+    .meal-4{
+        opacity: 0;
+        animation:  fadein 2s .9s;
+        animation-fill-mode: forwards;
+    }
 
 
     &--titles{
@@ -68,7 +75,7 @@
         margin-top: 30px;
         margin-left: 10px;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 100;
         margin-bottom: 5px;
     }
     &--underlines{
@@ -84,7 +91,7 @@
             animation: translate 1s;
             animation-fill-mode: forwards;
             & i{
-               animation: rotation 1.5s;
+               animation: rotation .7s .1s ease-in-out;
             }
         }
         &:hover .text-bloc{
@@ -135,6 +142,7 @@
             display: inline;
             // margin-top: 0px;
             font-size: 14px;
+            font-weight: 100;
 
         }
 
