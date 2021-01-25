@@ -5,7 +5,7 @@ button {
   cursor: pointer;
 }
 
-.explore a {
+.explore form {
   color: white;
   text-decoration: none;
 }
@@ -733,7 +733,7 @@ body {
   }
   .running-steps .steps-bloc {
     display: block;
-    max-width: 500px;
+    min-width: 400px;
     margin-top: -40px;
     margin-left: -60px;
     transform: scale(0.8);
