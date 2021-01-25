@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="text/html; charset=UTF-8" />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
     <link rel="stylesheet" href="/FannyDevilliers_3_08012021/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="icon" type="image/gif" href="./docs/img/logo/O.png">
@@ -31,7 +31,7 @@
             <section class="explore">
                 <h1>Réservez le menu qui vous convient</h1>
                 <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
-                <button class="btn-explore"><a href="#restaurants">Explorer nos restaurants</a></button>
+                <a href="#restaurants"><button class="btn-explore">Explorer nos restaurants</button></a>
             </section>
 
             <section class="running-steps">
@@ -39,29 +39,29 @@
 
                 <div class="steps-bloc">
 
-                    <button class="btn-steps">
+                    <div class="btn-steps">
                         <div class="round"><p>1</p></div>
                         <div class="btn-txt">
                             <i class="fas fa-mobile-alt"></i>
                             <h3>Choississez un restaurant</h3>
                         </div>
-                    </button>
+                    </div>
 
-                    <button class="btn-steps">
+                    <div class="btn-steps">
                         <div class="round"><p>2</p></div>
                         <div class="btn-txt">
                             <i class="fas fa-list"></i>
                             <h3>Composez votre menu</h3>
                         </div>
-                    </button>
+                    </div>
 
-                    <button class="btn-steps">
+                    <div class="btn-steps">
                         <div class="round"><p>3</p></div>
                         <div class="btn-txt">
                             <i class="fas fa-store"></i>
                             <h3>Dégustez au restaurant</h3>
                         </div>
-                    </button>
+                    </div>
                 </div>
             </section>
         </div>
@@ -81,13 +81,14 @@
                         <div class="article-footer">
                             <h2>La palette du goût</h2>
                             <p>Ménilmontant</p>
-                </a>
+                
                             <input class="heart" type="checkbox" value="None" id="heart-1" name="check"/>
                             <label for="heart-1">
                                 <i class="far fa-heart"></i>
                             </label>
                         </div>
                     </article>
+                </a>
             
             <!-- RESTAURANT 2 -->
             
@@ -100,13 +101,14 @@
                         <div class="article-footer">
                             <h2>La note enchantée</h2>
                             <p>Charonne</p>
-                </a>
+                
                             <input class="heart" type="checkbox" value="None" id="heart-2" name="check"/>
                             <label for="heart-2">
                                 <i class="far fa-heart"></i>
                             </label>
                         </div>
                     </article>
+                </a>
 
             <!-- RESTAURANT 3 -->
 
@@ -119,13 +121,14 @@
                         <div class="article-footer">
                             <h2>À la française</h2>
                             <p>Cité Rouge</p>
-                </a>
+                
                             <input class="heart" type="checkbox" value="None" id="heart-3" name="check"/>
                             <label for="heart-3">
                                 <i class="far fa-heart"></i>
                             </label>
                         </div>
                     </article>
+                </a>
 
             <!-- RESTAURANT 4 -->
 
@@ -138,14 +141,17 @@
                     <div class="article-footer">
                         <h2>Le délice des sens</h2>
                         <p>Folie-Méricourt</p>
-            </a>
+            
                         <input class="heart" type="checkbox" value="None" id="heart-4" name="check"/>
                         <label for="heart-4">
                             <i class="far fa-heart"></i>
                         </label>
                     </div>
                 </article>
-                <i  id="chevron-right" class="fas fa-chevron-right chevrons"></i>
+            </a>
+            
+            <i  id="chevron-right" class="fas fa-chevron-right chevrons"></i>
+            
         </section>    
     </main>
 

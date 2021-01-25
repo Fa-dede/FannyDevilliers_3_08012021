@@ -13,10 +13,7 @@ button{
     margin-top: 12px;
     outline: transparent;
     @include box-shadow;
-    a{
-        text-decoration: none;
-        color: white;
-    }
+    color: white;
 }
 
 .btn-steps{
