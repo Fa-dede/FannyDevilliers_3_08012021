@@ -3,6 +3,14 @@
     display: none;
 }
 
+.restaurants-bloc a {
+    color: black;
+    text-decoration: none;
+    :visited{
+        text-decoration: none;
+    }
+}
+
 .restaurants{
     display: block;
     margin-top: 15px;
@@ -42,13 +50,13 @@
         border-radius: 0 0 20px 20px;
         padding-left: 15px;
         @include box-shadow;
-        a{
-            text-decoration: none;
-            color: black;
-            :visited{
-                text-decoration: none;
-            }
-        }
+        // a{
+        //     text-decoration: none;
+        //     color: black;
+        //     :visited{
+        //         text-decoration: none;
+        //     }
+        // }
         h2{
             font-size: 18px;
             padding-top: 15px;
