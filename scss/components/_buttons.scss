@@ -9,6 +9,9 @@ button{
 }
 
 .btn-explore{
+    display: block;
+    text-align: center;
+    margin: auto;
     background: rgb(255,121,218);
     background: linear-gradient(170deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     height: 48px;
@@ -19,6 +22,9 @@ button{
     margin-top: 12px;
     outline: transparent;
     @include box-shadow;
+    color: white;
+    text-decoration: none;
+    padding-top: 14px;
 }
 
 .btn-steps{
