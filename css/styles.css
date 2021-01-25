@@ -733,6 +733,7 @@ body {
     display: inline-block;
     height: 230px;
     margin-top: 10px;
+    width: 40%;
   }
   .running-steps h1 {
     display: block;
@@ -740,7 +741,7 @@ body {
   }
   .running-steps .steps-bloc {
     display: block;
-    min-width: 400px;
+    min-width: 500px;
     margin-top: -40px;
     margin-left: -60px;
     transform: scale(0.8);
