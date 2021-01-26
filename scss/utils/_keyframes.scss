@@ -46,13 +46,32 @@
 }
 
 @keyframes resize{
-   0%{
-      width: auto;
-   }
-   100%{
-      width: 50%;
-   }
+  25%{
+    width: 90%;
+  }
+  50%{
+    width: 85%;
+  }
+  100%{
+    width: 80%;
+  }
 }
+
+@keyframes resize2{
+100%{
+  width: 90%;
+}
+
+}
+
+// @keyframes resize2{
+//   50%{
+//     width: 95%;
+//   }
+//   100%{
+//     width:70%;
+//   }
+// }
 
 // ANIMATION LOADER SPINNER
 

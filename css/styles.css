@@ -274,11 +274,19 @@ button {
   }
 }
 @keyframes resize {
-  0% {
-    width: auto;
+  25% {
+    width: 90%;
+  }
+  50% {
+    width: 85%;
   }
   100% {
-    width: 50%;
+    width: 80%;
+  }
+}
+@keyframes resize2 {
+  100% {
+    width: 90%;
   }
 }
 @keyframes sentBack {
@@ -545,16 +553,27 @@ body * {
   box-shadow: 0px 5px 15px #d9d9d9;
   cursor: pointer;
 }
+.menu__elements--meals .text-bloc {
+  width: 100%;
+}
+.menu__elements--meals .text-bloc p {
+  width: 80%;
+}
 .menu__elements--meals:hover .selector-bloc {
-  animation: translate 1s;
+  display: block;
+  animation: translate 1s 0.1s;
   animation-fill-mode: forwards;
 }
 .menu__elements--meals:hover .selector-bloc i {
   animation: rotation 0.7s 0.1s ease-in-out;
 }
 .menu__elements--meals:hover .text-bloc {
-  animation: resize 0s;
+  animation: resize 1s;
   animation-fill-mode: forwards;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__elements--meals .text-bloc {
   display: block;
@@ -565,7 +584,7 @@ body * {
   overflow: hidden;
 }
 .menu__elements--meals h2 {
-  display: block;
+  display: inline;
   margin: 0 0 5px 0;
   font-size: 17px;
   margin-bottom: -15px;
@@ -575,20 +594,24 @@ body * {
   overflow: hidden;
 }
 .menu__elements--meals p {
-  display: inline;
+  display: inline-block;
+  margin-top: 5px;
   font-size: 14px;
   font-weight: 100;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__elements--meals .selector-bloc {
   display: block;
   float: right;
-  width: 20px;
+  width: 50px;
 }
 .menu__elements--meals .price {
   display: block;
   float: right;
   position: relative;
-  margin-right: 15px;
   left: 0px;
   bottom: 25px;
   margin-top: 0;
@@ -605,6 +628,7 @@ body * {
   left: 90px;
   border-radius: 0 20px 20px 0;
   background-color: #99e2d0;
+  margin-left: 20px;
 }
 .btn-selection .selectors {
   visibility: hidden;
@@ -616,6 +640,14 @@ body * {
   color: #ffffff;
 }
 
+@media all and (max-width: 1295px) {
+  .menu__elements--meals .text-bloc {
+    width: 90%;
+  }
+  .menu__elements--meals .text-bloc p {
+    width: 70%;
+  }
+}
 body {
   margin: 0;
   overflow-x: hidden;

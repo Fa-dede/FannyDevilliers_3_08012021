@@ -89,25 +89,34 @@
     }
     &--meals{
 
+        .text-bloc{
+            width: 100%;
+            p{
+                width: 80%;
+            }
+        }
+
         &:hover .selector-bloc{
-            animation: translate 1s;
+            display: block;
+            // border: solid 1px black;
+            animation: translate 1s 0.1s;
+            // width: 30%;
             animation-fill-mode: forwards;
             & i{
                animation: rotation .7s .1s ease-in-out;
             }
         }
-        &:hover .text-bloc{
+        &:hover .text-bloc {
             // background-color: violet;
-            animation: resize 0s;
+            animation: resize 1s;
             animation-fill-mode: forwards;
-            // word-wrap: break-word;
-            // text-overflow: ellipsis;
-            // white-space: nowrap;
-            // overflow: hidden;
+            // border: black solid 1px;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
-        // text-overflow: ellipsis;
-        // word-wrap: break-word;
         overflow-x: hidden;
         overflow-y: hidden;
         max-height: 70px;
@@ -121,7 +130,7 @@
         .text-bloc{
             display: block;
             height: 50px;
-            // width: 70%;
+            // width: 80%;
             // max-width: 220px;
             word-wrap: break-word;
             text-overflow: ellipsis;
@@ -130,7 +139,7 @@
         }
     
         h2{
-            display: block;
+            display: inline;
             margin:0 0 5px 0;
             font-size: 17px;
             margin-bottom: -15px;
@@ -141,28 +150,33 @@
             
         }
         p{
-            display: inline;
-            // margin-top: 0px;
+            display: inline-block;
+            margin-top: 5px;
             font-size: 14px;
             font-weight: 100;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
 
         }
 
         .selector-bloc{
             display: block;
             float: right;
-            width: 20px;
+            width: 50px;
+            // background-color: black;
         }
 
         .price{
             display: block;
             float: right;
             position: relative;
-            margin-right: 15px;
             left: 0px;
             bottom: 25px;
             margin-top: 0;
             font-weight: bold;
+            // border: black solid 1px;
         }
     }   
 }
@@ -178,6 +192,7 @@
     // left: 100px;
     border-radius: 0 20px 20px 0;
     background-color: $tertiary-color;
+    margin-left: 20px;
     .selectors{
         visibility: hidden;
     }
@@ -187,4 +202,27 @@
         right: 7px;
         color: #ffffff;
     }
+}
+
+@media all and (max-width: 1295px){
+
+    .menu__elements--meals{
+        .text-bloc{
+            width: 90%;
+        
+            p{
+                width: 70%;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 }
