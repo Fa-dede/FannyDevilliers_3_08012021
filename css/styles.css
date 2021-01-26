@@ -653,7 +653,7 @@ body {
 .running-steps {
   margin: 45px 30px 50px 30px;
 }
-.running-steps h1 {
+.running-steps h2 {
   font-size: 24px;
   margin-bottom: 30px;
 }
