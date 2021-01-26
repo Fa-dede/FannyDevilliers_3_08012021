@@ -107,7 +107,7 @@ button {
   font-weight: bold;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
-  background-clip: text;
+  /* background-clip: text; */
   -webkit-text-fill-color: transparent;
   animation: pulse 0.5s ease-in;
 }
