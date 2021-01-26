@@ -2,8 +2,10 @@
 
 .restaurant-img{
     height: 280px;
+    img{
+        width: 100%;
+    }
 }
-
 
 .fa-arrow-left{
     display: block;
@@ -127,7 +129,7 @@
             overflow: hidden;
         }
     
-        h1{
+        h2{
             display: block;
             margin:0 0 5px 0;
             font-size: 17px;

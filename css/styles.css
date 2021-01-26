@@ -454,6 +454,9 @@ body * {
 .restaurant-img {
   height: 280px;
 }
+.restaurant-img img {
+  width: 100%;
+}
 
 .fa-arrow-left {
   display: block;
@@ -564,7 +567,7 @@ body * {
   white-space: nowrap;
   overflow: hidden;
 }
-.menu__elements--meals h1 {
+.menu__elements--meals h2 {
   display: block;
   margin: 0 0 5px 0;
   font-size: 17px;
@@ -680,7 +683,7 @@ body {
   padding-left: 30px;
   padding-bottom: 30px;
 }
-.footer-page h1 {
+.footer-page h2 {
   color: #fff;
   font-family: "Shrikhand", cursive;
   font-weight: 100;
