@@ -6,6 +6,7 @@
     }
 }
     .reservation{
+        max-height: 700px;
     h1{
         text-align: center;
     }
@@ -23,7 +24,7 @@
         margin-left: 30px;
         // margin-top: 50px;
         &__1, &__2{
-            margin-bottom: 60px;
+            margin-bottom: 80px;
         }
         &__1::before, &__2::before{
             // display: none;

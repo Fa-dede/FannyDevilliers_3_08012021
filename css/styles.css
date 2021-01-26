@@ -106,8 +106,8 @@ button {
 .heart:checked + label .far {
   font-weight: bold;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: pulse 0.5s ease-in;
 }
@@ -186,7 +186,7 @@ button {
 
 .restaurants {
   display: block;
-  margin-top: 15px;
+  margin-top: 0px;
   height: 253px;
 }
 .restaurants__1::before, .restaurants__2::before {
@@ -234,7 +234,7 @@ button {
   margin-top: 5px;
   font-size: 16px;
 }
-.restaurants i {
+.restaurants label {
   display: block;
   float: right;
   position: relative;
@@ -242,8 +242,8 @@ button {
   right: 10px;
   font-size: 28px;
   cursor: pointer;
+  margin-bottom: -50px;
 }
-
 @keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -663,10 +663,12 @@ body {
 
 .reservation {
   background-color: #f6f6f6;
-  padding: 30px 30px 70px 30px;
+  height: 1220px;
+  padding: 30px 30px 0px 30px;
 }
 .reservation h1 {
   font-size: 26px;
+  margin-bottom: 20px;
 }
 .reservation p {
   font-weight: 100;
@@ -751,6 +753,7 @@ body {
     margin: 0 0px 20px 0px;
     padding: 0 0 60px 0;
     border-radius: 150px 150px 0 0;
+    max-height: 400px;
   }
   .reservation h1 {
     text-align: center;
@@ -787,7 +790,7 @@ body {
     right: 20px;
   }
   .restaurants__1, .restaurants__2 {
-    margin-top: -35px;
+    margin-top: -52px;
   }
   .restaurants:hover {
     transform: scale(1.05);
@@ -843,6 +846,9 @@ body {
     text-align: center;
   }
 
+  .reservation {
+    max-height: 700px;
+  }
   .reservation h1 {
     text-align: center;
   }
@@ -859,7 +865,7 @@ body {
     margin-left: 30px;
   }
   .restaurants-bloc .restaurants__1, .restaurants-bloc .restaurants__2 {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .restaurants-bloc .restaurants__1::before, .restaurants-bloc .restaurants__2::before {
     position: relative;

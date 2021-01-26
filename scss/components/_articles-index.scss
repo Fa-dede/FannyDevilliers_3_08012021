@@ -13,7 +13,7 @@
 
 .restaurants{
     display: block;
-    margin-top: 15px;
+    margin-top: 0px;
     height: 253px;
     &__1::before, &__2::before{
         content: "Nouveau";
@@ -68,7 +68,7 @@
             font-size: 16px;
         }
     }
-    i{
+    label{
         display: block;
         float: right;
         position: relative;
@@ -76,9 +76,13 @@
         right: 10px;
         font-size: 28px;
         cursor: pointer;
+        margin-bottom: -50px;
     }
 
+&__2, &__3, &__4{
     
-
 }
+}
+
+
 
